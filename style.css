@@ -1,0 +1,188 @@
+body, div {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: #344123;
+	align-items: center;
+}
+
+.titrepage {
+	position: relative;
+	width: 100%;
+	height: 110px; 
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+  
+.titrepage img {
+  max-width: 280px; 
+  height: auto; 
+}
+
+.textedefilant {
+	display: inline-block;
+	font-family: "Anton", sans-serif;
+    width: 99%;
+    overflow: hidden;
+    color: #FFFFFF; /* Couleur du texte */
+}
+
+.marquee {
+    display: inline-block;
+    white-space: nowrap;
+    width: 99%; /* Texte occupera toute la largeur */
+    animation: marquee 20s linear infinite;
+}
+
+.marquee span {
+    padding-right: 100%; /* Assure que le texte ne se termine jamais */
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+h1 {
+	font-family: "Gabarito", sans-serif;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 38px;
+}
+
+h2 {
+	font-family: "Lexend Exa", sans-serif;
+	color: #ffffff;
+	font-size: 25px;
+}
+
+h3 {
+	font-family: "Lexend Exa", sans-serif;
+	color: #ffffff;
+	font-size: 20px;
+}
+
+
+
+.rectangle-container {
+    display: flex;
+    justify-content: center; /* Centre horizontalement */
+    margin: 20px 0; /* Espace autour du rectangle, optionnel */
+    transition : transform 0.4s ease-in-out;   
+}
+
+/* .rectangle-container:hover {
+    transform: scale(1.1)
+} */
+
+.rounded-rectangle {
+    display: flex;
+    align-items: center;
+    width: 1000px; /* Largeur du rectangle */
+    padding: 20px; /* Espacement interne */
+    background-color: #2F241E; /* Fond marron */
+    border: 2px solid white; /* Bordure blanche */
+    border-radius: 15px; /* Bords arrondis */
+    color: white; /* Couleur du texte */
+	margin: 20px;
+	margin-right: 90px;
+	margin-left: 90px;
+}
+
+.rectangle-image {
+    width: 120%; /* Largeur de l'image */ 
+    margin-right: 15px; /* Espace entre l'image et le contenu */
+}
+
+
+.rectangle-content {
+    padding-left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rectangle-text {
+    margin-top: 5px;
+    font-size: 15px; /* Taille du texte */
+     font-family: "Montserrat", sans-serif;
+}
+
+.discover-link {
+    text-align: center;
+    font-size: 18px;
+    color: #ffffff; /* Couleur blanche pour le texte */
+    text-decoration: none; /* Enlever la décoration par défaut (soulignement) */
+    font-family: "Inter", sans-serif;
+}
+
+.projects {
+    display: flex; /* Utilise Flexbox pour aligner les projets */
+    flex-wrap: wrap; /* Permet aux projets de passer à la ligne si l'espace est insuffisant */
+    justify-content: center; /* Centre horizontalement les projets */
+    align-items: center; /* Centre verticalement les projets dans le conteneur */
+    margin: 20px 0; /* Espace vertical autour de la section */
+}
+
+.project-container {
+    display: flex; /* Affiche les éléments à l'intérieur du conteneur comme une flexbox */
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne */
+    justify-content: center; /* Centre les cartes */
+    width: 100%; /* Utilise toute la largeur disponible */
+}
+
+.project-card {
+    margin: 10px; /* Espace autour de chaque carte de projet */
+    flex: 0 0 calc(50% - 20px); /* Chaque carte prendra 50% de la largeur moins l'espace pour les marges */
+    display: flex; /* Permet de traiter le project-card comme un élément flex */
+    justify-content: center; /* Centre le contenu à l'intérieur de la carte */
+}
+
+.rounded-project {
+    display: flex; /* Utiliser flex pour le contenu de la carte */
+    width: 500px; /* Largeur du rectangle */
+    flex-direction: column; /* Aligne le contenu en colonne */
+    align-items: center; /* Centre le contenu horizontalement */
+    padding: 20px; /* Espacement interne */
+    background-color: #2F241E; /* Fond marron */
+    border: 2px solid white; /* Bordure blanche */
+    border-radius: 15px; /* Bords arrondis */
+    color: white; /* Couleur du texte */
+}
+
+.project-text {
+    font-size: 13px; /* Taille du texte */
+    font-family: "Montserrat", sans-serif;
+}
+
+.divider {
+    height: 1px; /* Hauteur du trait */
+    background-color: white; /* Couleur du trait */
+    width: 100%; /* Prend toute la largeur du conteneur */
+}
+
+footer {
+	display: flex;
+	background-color: #1A230F;
+	border-top: 1px #ffffff;
+}
+
+.info {
+	border-top: 2px solid white; /* Bordure blanche */
+	font-family: "Jockey One", sans-serif;
+	color: #ffffff;
+	font-size: 15px;
+	text-align: center;
+	width: 100%;
+}
+
+
+
+
+
